@@ -26,5 +26,5 @@ def twoSum(nums, target):
                 if sum(valuess)== target:
                     print(combination)
            
-           
+ # calling the function          
 twoSum([2,7,11,15], 9)
