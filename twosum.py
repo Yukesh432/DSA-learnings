@@ -17,9 +17,12 @@ def twoSum(nums, target):
         for i in range(len(num_list)):
             # iterate through the list starting from the next element after nums[i]
             for j in range(i+1, len(num_list)):
+                # creating a combination tuple of indices (i, j)
                 combination= (i, j)
+                # create a tuple of values from nums at indices i and j
                 valuess= (num_list[i], num_list[j])
-                
+
+                # check if the sum of two values equals the target
                 if sum(valuess)== target:
                     print(combination)
            
