@@ -15,6 +15,7 @@ def twoSum(nums, target):
         target= target
         # iterate through the list of numbers
         for i in range(len(num_list)):
+            # iterate through the list starting from the next element after nums[i]
             for j in range(i+1, len(num_list)):
                 combination= (i, j)
                 valuess= (num_list[i], num_list[j])
