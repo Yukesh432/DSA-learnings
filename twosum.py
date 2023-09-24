@@ -13,6 +13,7 @@ def twoSum(nums, target):
         """
         num_list= nums
         target= target
+        # iterate through the list of numbers
         for i in range(len(num_list)):
             for j in range(i+1, len(num_list)):
                 combination= (i, j)
