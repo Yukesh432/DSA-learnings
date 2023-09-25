@@ -4,3 +4,11 @@ and each of their nodes contains a single digit. Add the two numbers and return 
 
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 """
+
+# Creating a node
+
+class Node:
+    def __init__(self, data):
+        self.data= data
+        self.next= None
+
