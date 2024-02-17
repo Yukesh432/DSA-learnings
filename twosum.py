@@ -29,12 +29,20 @@ You can return the answer in any order.
 #  # calling the function          
 # twoSum([2,7,11,15], 9)
 
-def twosum(arr, targett):
-    for i in arr:
-        print(arr[i])
-        # if arr[i]+ arr[i-1]== targett:
-        #     print(arr[i], arr[i-1])
+# def twosum(arr, targett):
+#     for i in (arr):
+#         print(arr[i])
+#         # if arr[i]+ arr[i-1]== targett:
+#         #     print(arr[i], arr[i-1])
 
-arr= [1,2,3,4,5]
+
+arr= [10,20,39,49,58]
 targett= 7
-twosum(arr, targett)
+# twosum(arr, targett)
+
+
+for i in (arr):
+    print(arr[i-1])
+    print("//////////////////")
+    print(i)
+    print(".............................")
