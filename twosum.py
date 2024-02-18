@@ -36,14 +36,19 @@ You can return the answer in any order.
 #         #     print(arr[i], arr[i-1])
 
 
-arr= [10,20,39,49,58]
+arr= [3,4,39,2,5]
 targett= 7
 # twosum(arr, targett)
 
 
-for i in (arr):
-    print(arr[i-1])
-    print("//////////////////")
+for i in enumerate(arr):
+    index, value= i
+    try:
+        if int(arr[index])+ int(arr[index+1]) == targett:
+            print(f"the pair is : {arr[index], arr[index+1]}")
+    except IndexError:
+        print("List index out of range................")
+
+
+
     print(i)
-    print(".............................")
-    print("..")
