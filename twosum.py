@@ -5,50 +5,27 @@ You may assume that each input would have exactly one solution, and you may not 
 
 You can return the answer in any order.
 """
-# def twoSum(nums, target):
-#         """
-#         :type nums: List[int]
-#         :type target: int
-#         :rtype: List[int]
-#         """
-#         num_list= nums
-#         target= target
-#         # iterate through the list of numbers
-#         for i in range(len(num_list)):
-#             # iterate through the list starting from the next element after nums[i]
-#             for j in range(i+1, len(num_list)):
-#                 # creating a combination tuple of indices (i, j)
-#                 combination= (i, j)
-#                 # create a tuple of values from nums at indices i and j
-#                 valuess= (num_list[i], num_list[j])
+def twoSum(nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        num_list= nums
+        target= target
+        # iterate through the list of numbers
+        for i in range(len(num_list)):
+            # iterate through the list starting from the next element after nums[i]
+            for j in range(i+1, len(num_list)):
+                # creating a combination tuple of indices (i, j)
+                combination= (i, j)
+                # create a tuple of values from nums at indices i and j
+                valuess= (num_list[i], num_list[j])
 
-#                 # check if the sum of two values equals the target
-#                 if sum(valuess)== target:
-#                     print(combination)
+                # check if the sum of two values equals the target
+                if sum(valuess)== target:
+                    print(combination)
            
-#  # calling the function          
-# twoSum([2,7,11,15], 9)
+ # calling the function          
+twoSum([2,7,11,15], 9)
 
-# def twosum(arr, targett):
-#     for i in (arr):
-#         print(arr[i])
-#         # if arr[i]+ arr[i-1]== targett:
-#         #     print(arr[i], arr[i-1])
-
-
-arr= [3,4,39,2,5]
-targett= 7
-# twosum(arr, targett)
-
-
-for i in enumerate(arr):
-    index, value= i
-    try:
-        if int(arr[index])+ int(arr[index+1]) == targett:
-            print(f"the pair is : {arr[index], arr[index+1]}")
-    except IndexError:
-        print("List index out of range................")
-
-
-
-    print(i)
