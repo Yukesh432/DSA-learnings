@@ -20,7 +20,9 @@ def bubble_sort(arr):
         """
     
     n = len(arr)
+    # this loop is used as outer loop to check iteratively whether sorting is completed or not
     for i in range(n-1):
+        # inner loop to swap adjacent elements
         for j in range(n-i-1):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
