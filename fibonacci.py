@@ -25,4 +25,4 @@ def n_th_fibonnaci(original_list, n):
 original_list = [0, 1]  # Initial list
 n = 10  # Number of times to generate and append the sum
 extended_list = n_th_fibonnaci(original_list, n)
-print("Extended list:", extended_list)
+print("The nth fibonacci sequence is ::", extended_list)
