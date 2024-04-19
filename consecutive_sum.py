@@ -22,18 +22,3 @@ def sum_consecutive_elements(original_list):
 
     return new_list
 
-def same_list(original_list):
-    for i in range(len(original_list)-1):
-        original_list.append(original_list[i]+original_list[i+1])
-    return original_list
-
-
-
-
-# Example usage
-original_list = [1, 2, 3, 4, 5]
-# result = sum_consecutive_elements(original_list)
-
-appended_list= same_list(original_list)
-# print("Original list:", original_list)
-print("New list:", appended_list)
