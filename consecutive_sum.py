@@ -22,3 +22,9 @@ def sum_consecutive_elements(original_list):
 
     return new_list
 
+
+list1= [1,2,3,4,5]
+print(list1)
+print("The list after summed up is: ")
+summed_list= sum_consecutive_elements(list1)
+print(summed_list)
