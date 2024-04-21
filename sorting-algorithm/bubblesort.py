@@ -3,6 +3,12 @@ import time
 import random
 from timeit import repeat
 
+"""
+The average time complexity of the bubble sort algorithm is O(n^2) since we have to loop the array two times,
+first n-1 times and second n-2 times. 
+But the best case scenario where the elements in the list are already sorted , the compleity reduces to O(n) times
+as we have to loop through each elements in the array only once.
+"""
 # def run_sorting_algorithm(algo, array):
 #     setup_code= algo
 #     stmt= (f"{algo}({array})")
