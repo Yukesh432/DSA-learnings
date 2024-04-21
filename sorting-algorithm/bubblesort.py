@@ -1,6 +1,14 @@
 import numpy as np
 import time
 import random
+from timeit import repeat
+
+# def run_sorting_algorithm(algo, array):
+#     setup_code= algo
+#     stmt= (f"{algo}({array})")
+#     times= repeat(setup=setup_code, stmt= stmt, repeat=3, number=10)
+
+#     print(f"Algorithm: {algo} minimum execution time: {min(times)}")
 
 def bubble_sort(arr):
     """
@@ -28,33 +36,34 @@ def bubble_sort(arr):
         for j in range(n-i-1):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
+    return arr
 
 
-def bubble_sort_early_termination(arr):
-    n = len(arr)
-    for i in range(n-1):
-        swapped = False
-        for j in range(0, n-i-1):
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
-                swapped = True
-        if not swapped:
-            break
+# def bubble_sort_early_termination(arr):
+#     n = len(arr)
+#     for i in range(n-1):
+#         swapped = False
+#         for j in range(0, n-i-1):
+#             if arr[j] > arr[j+1]:
+#                 arr[j], arr[j+1] = arr[j+1], arr[j]
+#                 swapped = True
+#         if not swapped:
+#             break
 
 # Example usage
 if __name__ == "__main__":
     # creating a list of random numbers
     np.random.seed(42)
-    list1 = np.random.randint(1, 10, size=10000)
+    list1 = np.random.randint(1, 10, size=100)
     print("Before sorting:\n", list1)
     
 
     start_time = time.time()
     # Sorting the list
     bubble_sort(list1)
+
     # bubble_sort_early_termination(list1)
     algo_run_time = time.time() - start_time
 
     print("List after Bubble sort:\n", list1)
     print(f"Completed in {algo_run_time}")
-
