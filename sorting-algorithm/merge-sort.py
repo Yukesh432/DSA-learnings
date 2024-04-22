@@ -72,8 +72,9 @@ def merge_recursive(array):
 
 
 if __name__ == "__main__":
-    ARRAY_LENGTH= 20
+    ARRAY_LENGTH= 10
     array = [randint(0, 1000) for i in range(ARRAY_LENGTH)]
+    print("Before sorting:: ", array)
     # list1= np.random.randint(1,10, 7)
     # list2= np.random.randint(1,10, 7)
     # merge_sort()
