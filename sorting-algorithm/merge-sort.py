@@ -46,13 +46,13 @@ def merge_recursive(array):
 
     # now we sort the array by recursively splitting the input into two equal halves
     # sorting each half and merging them together into the final result
-    # left_array= array[:midpoint]
-    # right_array= array[midpoint:]
-    # result= merge_sort(left_array, right_array)
-    # return result
-    return merge_sort(
-        left=merge_recursive(array[:midpoint]),
-        right=merge_recursive(array[midpoint:]))
+    left_array= merge_recursive(array[:midpoint])
+    right_array= merge_recursive(array[midpoint:])
+    result= merge_sort(left_array, right_array)
+    return result
+    # return merge_sort(
+    #     left=merge_recursive(array[:midpoint]),
+    #     right=merge_recursive(array[midpoint:]))
 # def run_sorting_algorithm(algorithm, array):
 #     # Set up the context and prepare the call to the specified
 #     # algorithm using the supplied array. Only import the
