@@ -9,4 +9,10 @@ optimal substructure and overlapping subproblems. The idea is to build a 2D tabl
 L where L[i][j] represents the length of the LCS of the sequences X[1..i] and Y[1..j]
 """
 
-sequence1= ['abc', 'defff', 'ijjkdef']
+# sequence1= ['abc', 'defff', 'ijjkdef']
+seq1= ['aababbaca', 'bbababaacaac']
+
+for i in seq1:
+    print(i)
+    print(i[2])
+
