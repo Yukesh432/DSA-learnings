@@ -10,9 +10,6 @@ L where L[i][j] represents the length of the LCS of the sequences X[1..i] and Y[
 """
 
 # sequence1= ['abc', 'defff', 'ijjkdef']
-seq1= ['aababbaca', 'bbababaacaac']
+seq1= ['aababbabca', 'bbababaacaac']
 
-for i in seq1:
-    print(i)
-    print(i[2])
 
