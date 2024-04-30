@@ -15,20 +15,4 @@ seq1= ['aababbabca', 'bbababaacaac']
 def lcs(x,y):
     # get the length of the strings
     m, n= len(x), len(y)
-
-    # create a 2d array to store lengths of longest common subsequence.
-    L= [[0] * (n+1) for i in range(m+1)]
-
-    # build the L[m+1][n+1] in bottom up fashion
-    for i in range(m+1):
-        for j in range(n+1):
-            if i ==0 or j ==0:
-                L[i][j] = 0
-            elif X[i-1] == Y[j-1]:
-                L[i][j] = L[i-1][j-1] +1
-            else:
-                L[i][j]= max(L[i-1][j], L[i][j-1])
-
-            
-
-
+    
