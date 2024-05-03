@@ -5,3 +5,4 @@ Topics:
 - Sorting Algorithm
 - Trees
 - Queues and Linked List
+- Dynamic Programming
