@@ -3,6 +3,8 @@
 Topics: 
 - Searching Algorithm
 - Sorting Algorithm
+    - Permutation Sort
+    - Selection Sort
 - Trees
 - Queues and Linked List
 - Dynamic Programming
