@@ -2,6 +2,8 @@
 
 Topics: 
 - Searching Algorithm
+    - Binary Search
+    - Linear search
 - Sorting Algorithm
     - Permutation Sort
     - Selection Sort
