@@ -4,6 +4,8 @@ Topics:
 - Searching Algorithm
     - Binary Search
     - Linear search
+    - Interpolation Search
+    - Bruteforce Search
 - Sorting Algorithm
     - Permutation Sort
     - Selection Sort
