@@ -9,6 +9,8 @@ Topics:
 - Sorting Algorithm
     - Permutation Sort
     - Selection Sort
-- Trees
+- Tree
+    -AVL Trees
+    - B-Tree
 - Queues and Linked List
 - Dynamic Programming
