@@ -6,11 +6,13 @@ Topics:
     - Linear search
     - Interpolation Search
     - Bruteforce Search
+    - MonteCarlo Tree search
 - Sorting Algorithm
     - Permutation Sort
     - Selection Sort
 - Tree
-    -AVL Trees
+    - AVL Trees
     - B-Tree
+
 - Queues and Linked List
 - Dynamic Programming
