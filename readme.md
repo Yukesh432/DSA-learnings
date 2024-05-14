@@ -14,6 +14,7 @@ Topics:
     - AVL Trees
     - B-Tree
 
-- Time and Space Complexity 
+- Time and Space Complexity
+- Big-O Notation 
 - Queues and Linked List
 - Dynamic Programming
