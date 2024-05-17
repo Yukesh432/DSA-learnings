@@ -13,14 +13,34 @@ L where L[i][j] represents the length of the LCS of the sequences X[1..i] and Y[
 # substring. Those substring that matches and has of max length , that will be the LCS.
 
 def generate_substring(ipstring):
+    subst= []
 
     for i in range(len(ipstring)):
         subStr= ""
 
         for j in range(i, len(ipstring)):
-            subStr+= ipstring[j]
-            print(subStr)
-        
+            subStr+=(ipstring[j])
+            subst.append(subStr)
+            
+    return subst
 
+substring1= generate_substring("zxabcdezy")
+substring2= generate_substring("yzabcdezx")
 
-generate_substring("hellopeople")
+matched_strings= []
+for i in substring1:
+    for j in substring2:
+        if i==j:
+            matched_strings.append(i)
+
+max_len= -1
+max_lenth_element= ''
+for element in matched_strings:
+    if len(element)> max_len:
+        max_len= len(element)
+        max_len_element= element
+# print(substring1)
+# print(substring2)
+print(matched_strings)
+print(max_len_element)
+print(max_len)
