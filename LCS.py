@@ -9,10 +9,18 @@ optimal substructure and overlapping subproblems. The idea is to build a 2D tabl
 L where L[i][j] represents the length of the LCS of the sequences X[1..i] and Y[1..j]
 """
 
-# sequence1= ['abc', 'defff', 'ijjkdef']
-seq1= ['aababbabca', 'bbababaacaac']
+# a simple solution would be to generate a substring of given strings and check for the match of those
+# substring. Those substring that matches and has of max length , that will be the LCS.
 
-def lcs(x,y):
-    # get the length of the strings
-    m, n= len(x), len(y)
-    
+def generate_substring(ipstring):
+
+    for i in range(len(ipstring)):
+        subStr= ""
+
+        for j in range(i, len(ipstring)):
+            subStr+= ipstring[j]
+            print(subStr)
+        
+
+
+generate_substring("hellopeople")
