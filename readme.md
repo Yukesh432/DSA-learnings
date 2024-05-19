@@ -18,3 +18,5 @@ Topics:
 - Big-O Notation 
 - Queues and Linked List
 - Dynamic Programming
+    - Memoization(Top-Down approach)
+    - Tabulation(Bottom-Up approach)
