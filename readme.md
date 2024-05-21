@@ -18,6 +18,9 @@ Topics:
 - Big-O Notation 
 - Queues and Linked List
 - Dynamic Programming
+
+For a problem to be solved using dynamic programming, the problem must have two key attributes: **Optimal Substructure** and **Overlapping subproblem**
+
     - Memoization(Top-Down approach)
     - Tabulation(Bottom-Up approach)
 
