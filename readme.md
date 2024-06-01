@@ -1,5 +1,15 @@
 <h2>This repo contains Data structure and algorithms concepts and code </h2>
 
+Linked List: It is a data structure used to implement sequence type of data. It consists of a node containing **data** and **pointer/memory address** to the next node.
+
+- Unlike static arrays which allocates the contigous chunk of memory to store items, a linked list stores each items in a node.
+
+- LinkedList supports efficient addition and removal of elements compared to static and dynamic arrays.
+
+- Usecase includes: Dynamic Memory Allocation(DMA), implementing Stacks and queues, Polynomial arithmentc, Music playlist etc.
+
+
+
 Topics: 
 - Searching Algorithm
     - Binary Search
