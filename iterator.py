@@ -19,15 +19,27 @@ class Sentence:
         self.index+=1
         return self.words[index]
 
+def sengen(sentence):
+    for word in sentence.split():
+        yield word
+
 sentence= "This is a great idea"
 
-obj1= Sentence(sentence)
-# for i in obj1:
-#     print(i)
-print(next(obj1))
-print(next(obj1))
-print(next(obj1))
-print(next(obj1))
+genfunc= sengen("This is a great idea")
+print(next(genfunc))
+print(next(genfunc))
+print(next(genfunc))
+print(next(genfunc))
+print(next(genfunc))
+
+
+# obj1= Sentence(sentence)
+# # for i in obj1:
+# #     print(i)
+# print(next(obj1))
+# print(next(obj1))
+# print(next(obj1))
+# print(next(obj1))
 
 
 
