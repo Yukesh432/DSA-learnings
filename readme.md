@@ -6,7 +6,7 @@ Linked List: It is a data structure used to implement sequence type of data. It 
 
 - LinkedList supports efficient addition and removal of elements compared to static and dynamic arrays.
 
-- Usecase includes: Dynamic Memory Allocation(DMA), implementing Stacks and queues, Polynomial arithmentc, Music playlist etc.
+- Usecase includes: *Dynamic Memory Allocation(DMA)*, implementing *Stacks* and *queues*, *Polynomial arithmetic*, *Music playlist* etc.
 
 
 
