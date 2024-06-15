@@ -2,6 +2,8 @@
 
 Python is a dynamically typed language. That means variable types are determined at runtime.
 
+Shallow copy vs Deep copy
+
 
 Linked List: It is a data structure used to implement sequence type of data. It consists of a node containing **data** and **pointer/memory address** to the next node.
 
