@@ -14,7 +14,7 @@ Linked List: It is a data structure used to implement sequence type of data. It 
 - Usecase includes: *Dynamic Memory Allocation(DMA)*, implementing *Stacks* and *queues*, *Polynomial arithmetic*, *Music playlist* etc.
 
 
-
+- Enque and Deque
 Topics: 
 - Searching Algorithm
     - Binary Search
