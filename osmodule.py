@@ -1,4 +1,5 @@
 import os
+import shutil
 # .............................................................................................................
 
 '''
@@ -44,3 +45,6 @@ print(os.path.relpath('/windows/projects', '/'))
 
 # .............................................................................................................
 
+'''
+shutil(shell Utilities) module will allows to use shell command using python code.
+'''
