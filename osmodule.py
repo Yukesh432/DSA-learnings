@@ -47,4 +47,18 @@ print(os.path.relpath('/windows/projects', '/'))
 
 '''
 shutil(shell Utilities) module will allows to use shell command using python code.
+
+eg. shutil.copy(source, destination) will copy the file . Both source and destination are string. 
+If destination is a filename, it will be used as the new name of the copied file
+
+shutil.copy returns the string of the copied path file.
+
 '''
+
+newdir= 'pythonBasics'
+full_path= os.path.join(newdir, os.path.abspath('.'))
+
+newdir= os.makedirs(full_path, exist_ok= True)
+print(newdir)
+shutil.copy('sortbylen.py', full_path)
+print('COPIED SUCCESSFUL......')
