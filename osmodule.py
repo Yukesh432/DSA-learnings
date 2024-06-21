@@ -51,7 +51,7 @@ shutil(shell Utilities) module will allows to use shell command using python cod
 eg. shutil.copy(source, destination) will copy the file . Both source and destination are string. 
 If destination is a filename, it will be used as the new name of the copied file
 
-shutil.copy returns the string of the copied path file.
+shutil.copy() returns the string of the copied path file.
 
 '''
 
