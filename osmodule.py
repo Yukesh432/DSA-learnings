@@ -55,10 +55,20 @@ shutil.copy() returns the string of the copied path file.
 
 '''
 
-newdir= 'pythonBasics'
-full_path= os.path.join(newdir, os.path.abspath('.'))
+newdir_name= 'pythonBasics'
+full_path= os.path.join(os.path.abspath('.'), newdir_name)
+# print(full_path)
 
 newdir= os.makedirs(full_path, exist_ok= True)
 print(newdir)
 shutil.copy('sortbylen.py', full_path)
 print('COPIED SUCCESSFUL......')
+
+# Moving files using shutil
+filename= 'iterator.py'
+destination_path= os.path.join(os.path.abspath('.'), newdir_name)
+source_path= os.path.join(os.path.abspath('.'), filename)
+shutil.move(source_path,destination_path)
+print("FILE MOVED SUCESSFULLY!!!")
+
+# .............................................................................................................
