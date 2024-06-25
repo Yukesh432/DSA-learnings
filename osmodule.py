@@ -64,11 +64,30 @@ print(newdir)
 shutil.copy('sortbylen.py', full_path)
 print('COPIED SUCCESSFUL......')
 
-# Moving files using shutil
-filename= 'iterator.py'
-destination_path= os.path.join(os.path.abspath('.'), newdir_name)
-source_path= os.path.join(os.path.abspath('.'), filename)
-shutil.move(source_path,destination_path)
-print("FILE MOVED SUCESSFULLY!!!")
+# # Moving files using shutil
+# filename= 'iterator.py'
+# destination_path= os.path.join(os.path.abspath('.'), newdir_name)
+# source_path= os.path.join(os.path.abspath('.'), filename)
+# shutil.move(source_path,destination_path)
+# print("FILE MOVED SUCESSFULLY!!!")
 
 # .............................................................................................................
+
+'''
+shutil.copy() will copy the single file whereas shutil.copytree() will copy an entire
+folder and every folder and files contained within it.
+The function will return the path of the copied folder as string
+
+shutil.copytree(source, destination)
+
+'''
+def copytreefunc(*args):
+    # dirname= 'DataStruct'
+
+    for idx, item in enumerate(args):
+        source_path= os.path.join(os.path.abspath('.'), item)
+        print(source_path)
+        # destination_path= os.path.join(os.path.abspath('.'), )
+
+
+copytreefunc(['test.py', 'sortbylen.py'])
