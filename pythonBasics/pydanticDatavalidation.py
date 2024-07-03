@@ -1,4 +1,5 @@
 from pydantic import BaseModel, ValidationError
+from typing import Any
 
 class StaticModel(BaseModel):
     a: int
