@@ -39,7 +39,12 @@ def custom_map(func, iterable):
 def square(x):
     return x* x
 
+# ..................................................................................................................
 
+"""
+Implemeting custom zip function
+
+"""
 def custom_zip(*iterables):
     iterators= [iter(it) for it in iterables]
     while True:
@@ -73,5 +78,5 @@ if __name__=='__main__':
     print(list(zipped))
 
     # or we can use next() to yield each element
-    print(next(zipped))
-    print(next(zipped))
+    # print(next(zipped))
+    # print(next(zipped))
