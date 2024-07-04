@@ -1,4 +1,7 @@
 """
+REF:: https://stackoverflow.com/questions/27392402/what-is-first-class-function-in-python
+https://www.geeksforgeeks.org/first-class-functions-python/
+
 First-class functions are functions treated as first-class citizens (FCC) in a programming language.
 
 FCC are "objects" which:
