@@ -39,6 +39,19 @@ def custom_map(func, iterable):
 def square(x):
     return x* x
 
+
+def custom_zip(*iterables):
+    iterators= [iter(it) for it in iterables]
+    while True:
+        try:
+            yield tuple([next(it) for it in iterators])
+        except StopIteration:
+            return
+
+
+
+
+
 if __name__=='__main__':
     # Here we are assigning the variable 'func1' to the function returned by 'html_tag'
     # Now the variable 'func1' is a function waiting to be called with the argument expected by 'wrap_text'
@@ -52,3 +65,13 @@ if __name__=='__main__':
     numbers= [1,2,3,4,5]
     res= custom_map(square, numbers)
     print(res)
+
+    ## trying out custom zip function
+    list1= [1,2,3]
+    list2= ['a', 'b', 'c']
+    zipped= custom_zip(list1, list2)
+    print(list(zipped))
+
+    # or we can use next() to yield each element
+    print(next(zipped))
+    print(next(zipped))
