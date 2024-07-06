@@ -12,7 +12,9 @@
 # print(dir(factorial))
 
 # print(factorial.__dict__)
-
+"""
+Closures:: 
+"""
 import bobo
 
 @bobo.query('/')
