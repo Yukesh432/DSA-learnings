@@ -13,7 +13,7 @@
 
 # print(factorial.__dict__)
 """
-Closures:: 
+Closures:: Closures are the function with the extended scope
 """
 import bobo
 
