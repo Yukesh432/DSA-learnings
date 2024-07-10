@@ -13,7 +13,9 @@
 
 # print(factorial.__dict__)
 """
-Closures:: Closures are the function with the extended scope
+Closures:: Closures are the function with the extended scope that can access non-global variables referenced in thee body of the function
+but not defined there.
+
 """
 import bobo
 
