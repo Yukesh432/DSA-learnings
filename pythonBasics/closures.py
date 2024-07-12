@@ -49,10 +49,11 @@ print(avg(20))
 
 def make_averager():
     series= []
-
+ 
     def averager(new_value):
         series.append(new_value)
         total= sum(series)
+       
         return total/len(series)
     
     return averager   # It is returning the function object
@@ -67,6 +68,26 @@ print(avg(20))
 
 print(avg.__code__.co_varnames)
 
-# A closure is a function that retains the bindings of the free variables
-# that exist when the function is defined., so that they can be used later when the function is
-# invoked and the defining scope is no longer available.
+"""
+ A closure is a function that retains the bindings of the free variables
+ that exist when the function is defined., so that they can be used later when the function is
+ invoked and the defining scope is no longer available.
+"""
+
+"""
+The nonlocal declaration::
+
+UnboundLocalError: cannot access local variable 'count' where it is not associated with a value
+"""
+
+def make_averager():
+     count = 0 
+     total = 0 
+     def averager(new_value): 
+        count += 1 
+        total += new_value 
+        return total / count 
+     return averager
+
+avgg= make_averager()
+avgg(12)
