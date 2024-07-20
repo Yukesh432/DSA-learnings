@@ -6,26 +6,26 @@ If the task is I/O bound using multi-threading helps over mutiprocessing
 import time
 import threading
 
-start= time.perf_counter()
+# start= time.perf_counter()
 
-def delay():
-    print("Making delay of 1 second")
-    time.sleep(1)
-    print("Delay finished.....")
+# def delay():
+#     print("Making delay of 1 second")
+#     time.sleep(1)
+#     print("Delay finished.....")
 
-# delay()
-# delay()
+# # delay()
+# # delay()
 
-thread1= threading.Thread(target=delay)
-thread2= threading.Thread(target=delay)
+# thread1= threading.Thread(target=delay)
+# thread2= threading.Thread(target=delay)
 
-thread1.start()
-thread2.start()
+# thread1.start()
+# thread2.start()
 
 
-finish= time.perf_counter()
+# finish= time.perf_counter()
 
-print(f'Finished in {round(finish-start, 2)} seconds')
+# print(f'Finished in {round(finish-start, 2)} seconds')
 
 import itertools
 import time
@@ -66,5 +66,14 @@ def main():
     print('Answer:', result)
 
 
+def takenap():
+    time.sleep(5)
+    print("Wake up!!!")
+
+
+
 if __name__=='__main__':
-    main()
+    # main()
+    threadobj1= threading.Thread(target= takenap)
+    threadobj1.start()
+    print("End of program............")
