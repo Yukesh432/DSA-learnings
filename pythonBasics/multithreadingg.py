@@ -71,6 +71,30 @@ def takenap():
     print("Wake up!!!")
 
 
+"""
+Passing arguments to the Thread's target function
+
+Eg: 
+
+>>> import threading
+>>> threadobj= threading.Thread(target= print, args=['Harry', 'Potter', 'Gilly'])
+>>> threadobj.start()
+
+Here target= function name
+args= function argument
+
+Without threading , we can simply run this line for printing::
+
+>>> print('Harry', 'Potter', 'Gilly')
+
+"""
+
+
+"""
+Multiple threads can cause the problem of concurrency issues.
+This happens when threads read and write variables at the same time , causing threads to trip over each other.
+
+"""
 
 if __name__=='__main__':
     # main()
