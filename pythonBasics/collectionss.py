@@ -2,6 +2,12 @@
 Container Sequence: list, tuple, collections.deque can hold items of different types of sequence
 
 Flat Sequence: str, byte, bytearray, memoryview, array.array can hold items of one type only
+
+Ordered dict:: they are similar to dict() type , but has additional features related to ordering
+
+OrderedDict algorithm can handle frequent reordering operation better than normal dict(). Suitable for implementing various
+kinds of LRU caches.
+
 """
 
 # Defining and using namedtuple type
