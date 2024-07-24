@@ -13,10 +13,10 @@ kinds of LRU caches.
 # Defining and using namedtuple type
 from collections import namedtuple
 
-# Here the first argument should be the name of the namedtuple type and second 
-# argument should be a string contatining the names of the fields separated by 
-# spaces or commas
-
+'''Here the first argument should be the name of the namedtuple type and second 
+argument should be a string contatining the names of the fields separated by 
+spaces or commas
+'''
 Food= namedtuple('FoodItems', 'name ingredients chemicalcomposition weight')
 
 oats= Food('Instant-oats', 'barley', "protein fibers", 100)
