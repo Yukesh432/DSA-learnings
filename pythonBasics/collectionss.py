@@ -22,5 +22,11 @@ Food= namedtuple('FoodItems', 'name ingredients chemicalcomposition weight')
 oats= Food('Instant-oats', 'barley', "protein fibers", 100)
 
 
+Car= namedtuple("CarBrands", 'name no_of_tyres no_of_sitter mileage speed')
+
+car_one= Car('tesla-x1', 4, 2, 45, 50 )
+
+print(car_one)
 print(oats)
+
 
