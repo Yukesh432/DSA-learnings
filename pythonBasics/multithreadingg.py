@@ -1,6 +1,9 @@
 """
 If the task is I/O bound using multi-threading helps over mutiprocessing
 
+Process: A process is an instance of a computer program that is in execution
+
+Thread: A thread is an entity within a process that can be scheduled for execution
 
 """
 import time
