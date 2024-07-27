@@ -1,5 +1,5 @@
 """
-If the task is I/O bound using multi-threading helps over mutiprocessing
+If the task is I/O bound using multi-threading helps over mutiprocessing.
 
 Process: A process is an instance of a computer program that is in execution
 
@@ -8,6 +8,7 @@ Thread: A thread is an entity within a process that can be scheduled for executi
 """
 import time
 import threading
+from threading import Thread
 
 # start= time.perf_counter()
 
@@ -104,3 +105,15 @@ if __name__=='__main__':
     threadobj1= threading.Thread(target= takenap)
     threadobj1.start()
     print("End of program............")
+
+
+    print(threading.current_thread())
+    print(threading.active_count())
+    print(threading.enumerate())
+
+    # it returns the main Thread object. it is the thread from 
+    # which python interpreter was started.
+    print(threading.main_thread())
+
+    threadobjx= Thread(target=print, args=["This is shit"])
+    threadobjx.run()
