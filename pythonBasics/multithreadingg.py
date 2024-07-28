@@ -119,3 +119,6 @@ if __name__=='__main__':
 
     threadobjx= Thread(target=print, args=["This is shit"])
     threadobjx.run()
+
+    thread1= Thread(target=print, args="123 This is working.........")
+    thread1.run()
