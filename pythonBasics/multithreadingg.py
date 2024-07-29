@@ -122,3 +122,6 @@ if __name__=='__main__':
 
     thread1= Thread(target=print, args="123 This is working.........")
     thread1.run()
+
+    threadz= Thread(target=print, args="zzz This is working.........")
+    threadz.run()
