@@ -26,6 +26,11 @@ Car= namedtuple("CarBrands", 'name no_of_tyres no_of_sitter mileage speed')
 
 car_one= Car('tesla-x1', 4, 2, 45, 50 )
 
+tokenizers= namedtuple("TokenizerNames", 'subword_tokenizer no_of_dim algo_used' )
+
+bpe_tokenizer= tokenizers('BBPE', 500, 'bruteforce')
+
+print(bpe_tokenizer)
 print(car_one)
 print(oats)
 
