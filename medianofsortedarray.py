@@ -16,3 +16,13 @@ Consider arrays `nums1 = [1, 3]` and `nums2 = [2]`.
 If we merge them, we get `[1, 2, 3]`. The median in this case is the 
 middle element, which is 2.
 """
+import math
+
+a= [20, 30, 40, 50]
+b= [3, 5, 7, 9]
+
+merged_array= a+b
+print("The merged unsorted array is ::" , merged_array)
+
+print("The merged sorted array is:: ", sorted(merged_array))
+
