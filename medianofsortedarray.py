@@ -27,4 +27,4 @@ print("The merged unsorted array is ::" , merged_array)
 print("The merged sorted array is:: ", sorted(merged_array))
 
 result= np.median(merged_array)
-print(result)
+print('THe median of the sorted array is:: ', result)
