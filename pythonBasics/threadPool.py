@@ -5,7 +5,7 @@ python concurrent.futures have the class named : ThreadPoolExecutor and ProcessP
 ThreadPoolExecutor is an Executor subclass that uses a pool of threads to execute calls asynchronously
 
 """
-from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
+from concurrent.futures import ThreadPoolExecutor
 import numpy as np
 
 
