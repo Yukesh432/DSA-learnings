@@ -16,7 +16,7 @@ def testFunc(numlist: np.array):
 
 """
 Deadlock:: It can occur when the callable assocaited with a Future waits on the result if another Future
-Deadlock freezes  the process imfitely
+Deadlock freezes  the process infinitely, waiting for each orther to free up the resource.
 """
 
 def wait_b():
