@@ -29,6 +29,9 @@ def wait_a():
     print(a.result())
     return 6
 
+def maxfunc(numlist:np.array):
+    return max(numlist)
+
 
 
 if __name__=='__main__':
@@ -38,12 +41,17 @@ if __name__=='__main__':
         future= executor.submit(testFunc, np.ones(5))
         print(future.result())
 
-
         with ThreadPoolExecutor(60) as exe:
           
             print(exe._max_workers)
 
     print(".............")
-    executor_ii= ThreadPoolExecutor(max_workers=os.cpu_count())
-    a= executor_ii.submit(wait_b)
-    b= executor_ii.submit(wait_a)
+    # executor_ii= ThreadPoolExecutor(max_workers=os.cpu_count())
+    # a= executor_ii.submit(wait_b)
+    # b= executor_ii.submit(wait_a)
+
+    print("#"*100)
+
+    with ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
+        taask= executor.submit(maxfunc, np.ones(5))
+        print(taask.result())
