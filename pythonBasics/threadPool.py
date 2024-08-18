@@ -52,6 +52,7 @@ if __name__=='__main__':
 
     print("#"*100)
     print('$'*100)
+    print('.'*100)
 
     with ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
         taask= executor.submit(maxfunc, np.ones(5))
