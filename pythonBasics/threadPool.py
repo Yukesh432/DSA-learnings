@@ -19,15 +19,15 @@ Deadlock:: It can occur when the callable assocaited with a Future waits on the 
 Deadlock freezes  the process infinitely, waiting for each other to free up the resource.
 """
 
-def wait_b():
-    time.sleep(5)
-    print(b.result())
-    return 5
+# def wait_b():
+#     time.sleep(5)
+#     print(b.result())
+#     return 5
 
-def wait_a():
-    time.sleep(5)
-    print(a.result())
-    return 6
+# def wait_a():
+#     time.sleep(5)
+#     print(a.result())
+#     return 6
 
 def maxfunc(numlist:np.array):
     return max(numlist)
