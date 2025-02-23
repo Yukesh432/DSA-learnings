@@ -48,4 +48,5 @@ For a problem to be solved using dynamic programming, the problem must have two 
 
 - Tabulation(Bottom-Up approach)
 
-- P vs NP completeness
+
+**P vs NP completeness**
