@@ -19,7 +19,7 @@ Stack:
 Queues:
 
 
-**Algorithms: **
+**Algorithms:**
 
 - Searching Algorithm
     - Binary Search
@@ -39,7 +39,8 @@ Queues:
 - Big-O Notation
 
 
-- Dynamic Programming
+
+**Dynamic Programming**
 
 For a problem to be solved using dynamic programming, the problem must have two key attributes: **Optimal Substructure** and **Overlapping subproblem**
 
