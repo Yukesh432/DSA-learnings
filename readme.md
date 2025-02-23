@@ -2,7 +2,7 @@
 
 Python is a dynamically typed language. That means variable types are determined at runtime.
 
-Shallow copy vs Deep copy
+**Data structures:** Linked List, Stack, Queues
 
 
 Linked List: It is a data structure used to implement sequence type of data. It consists of a node containing **data** and **pointer/memory address** to the next node.
@@ -14,8 +14,13 @@ Linked List: It is a data structure used to implement sequence type of data. It 
 - Usecase includes: *Dynamic Memory Allocation(DMA)*, implementing *Stacks* and *queues*, *Polynomial arithmetic*, *Music playlist* etc.
 
 
-- Enque and Deque
-Topics: 
+Stack: 
+
+Queues:
+
+
+**Algorithms: **
+
 - Searching Algorithm
     - Binary Search
     - Linear search
@@ -29,9 +34,11 @@ Topics:
     - AVL Trees
     - B-Tree
 
+**Algorithm Analysis**
 - Time and Space Complexity
-- Big-O Notation 
-- Queues and Linked List
+- Big-O Notation
+
+
 - Dynamic Programming
 
 For a problem to be solved using dynamic programming, the problem must have two key attributes: **Optimal Substructure** and **Overlapping subproblem**
